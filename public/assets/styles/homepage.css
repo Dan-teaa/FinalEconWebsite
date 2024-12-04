@@ -1,0 +1,509 @@
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    
+}
+
+/* Responsive Layout for ctaButtons */
+@media screen and (max-width: 768px) {
+    .buttonContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #900028;
+
+    
+}
+
+/* General Navbar Styles */
+.navBar {
+    width: 100%;
+    font-family: "Roboto Flex", Arial, sans-serif;
+    
+}
+
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #900028;
+    color: white;
+    padding: 5px 20px;
+}
+
+.topNav .navLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navLinks a:hover {
+    text-decoration: underline;
+}
+
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.loginButton {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.loginButton:hover {
+    background: white;
+    color: #900028;
+}
+
+
+.middleNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.fordhamNameImg {
+    height: 35px;
+}
+
+.middleNav h2 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color : #282220;
+}
+
+
+.bottomNav {
+    height: 5px;
+    background-color: #900028;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    background-image: url('/assets/views/images/economic-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.heroContent {
+    width: 70%;
+    text-align: center;
+    color: #282220;
+    margin-top: 150px;
+}
+
+.missionBox {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.missionBox h1 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 28px;
+    color: #900028;
+    margin-bottom: 10px;
+}
+
+.missionBox p {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #282220;
+}
+
+/* Main Body Section */
+.mainBody {
+    background-color: #ffffff;
+    padding: 30px 20px;
+}
+
+
+.mainBodyContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: stretch; 
+}
+
+.mainBodyImages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainBodyImages img {
+    width: 100%;
+    /*max-height: 300px;*/
+    object-fit: cover;
+    object-position: center 0%;
+    border: 3px solid #900028;
+}
+
+
+/* About Us Section */
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 2; 
+}
+
+/* About Us Content */
+.aboutUsContent {
+    margin-bottom: auto; 
+}
+
+.aboutUs h1 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 24px;
+    color: #900028;
+    margin-bottom: 10px;
+}
+
+.aboutUs p {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #282220;
+}
+
+.aboutUs h3 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 18px;
+    color: #900028;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.offerList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.offerList li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding-left: 35px;
+    position: relative;
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 16px;
+    color: #282220;
+    line-height: 1.6;
+}
+
+.offerList li::before {
+    content: "✔";
+    color: #900028;
+    font-size: 18px;
+    position: absolute;
+    left: 10;
+    top: 2px;
+    
+}
+
+
+
+/* Get Involved Section */
+.getInvolved {
+    margin-top: 20px; 
+    background-color: #e1e1e1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.mainBodyImages {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mainBodyImages img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #900028;
+    border-radius: 5px;
+}
+
+
+.eventBox {
+    flex: 1; 
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ctaButton {
+    display: inline-block;
+    background-color: #900028;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+    background-color: #70001e;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .mainBodyContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .buttonContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+
+
+/* General Footer Styles */
+.siteFooter {
+    background-color: #900028; 
+    color: white;
+    font-family: "Roboto Flex", Arial, sans-serif;
+    padding: 30px; 
+
+/
+.footerContainer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+
+.footerLeft {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.footerLogo {
+    max-width: 500px; 
+}
+
+/* Right Section: Links */
+.footerRight {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+}
+
+/* Columns Styling */
+.footerColumn {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.footerColumn h3 {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffff;
+}
+
+.footerLinks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footerLinks li {
+    margin-bottom: 7px;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerLinks a:hover {
+    text-decoration: underline;
+}
+
+
+.socialIcons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.socialIcons img {
+    width: 20px;
+    height: 20px;
+}
+
+
+.footerBottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+.footerBottom p {
+    margin: 0;
+    color: white;
+}
+
+/* Responsive Design for footer */
+@media screen and (max-width: 768px) {
+    .footerContainer {
+        flex-direction: column; 
+    }
+
+    .footerLeft,
+    .footerRight {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footerRight {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerColumn {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+/* EVENT BOX */
+.eventBox {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.eventBox h1 {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 24px;
+    color: #900028;
+    margin-bottom: 15px;
+}
+
+#eventsContainer {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    font-size: 16px;
+    color: #282220;
+   
+}
+.eventBox {
+    display: flex;
+    flex-direction: column; 
+    height: 100%; 
+    justify-content: flex-start;
+    background: #e1e1e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+    
+}
+
+#eventsContainer {
+    flex: 1; 
+    overflow-y:scroll; 
+    max-height: 975px; 
+    padding-right: 10px; 
+    scrollbar-width: thin; 
+    scrollbar-color: #900028 #f0f0f0; 
+    border-top: 3px solid #282220;
+    border-bottom: 3px solid #282220;
+    
+}
+
+.event-item {
+    border: 3px solid #900028;
+    border-radius: 30px;
+    margin: 7px;
+    background-color: #ffff;
+}
+
+#eventsContainer::-webkit-scrollbar {
+    width: 8px; 
+}
+
+#eventsContainer::-webkit-scrollbar-thumb {
+    background: #900028; 
+    border-radius: 4px;
+}
+
+#eventsContainer::-webkit-scrollbar-track {
+    background: #f0f0f0; 
+}

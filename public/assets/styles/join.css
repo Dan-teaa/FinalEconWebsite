@@ -1,0 +1,89 @@
+/* Join Page Styling */
+body {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #900028;
+    color: #282220;
+}
+
+/* Main Body Section */
+.mainBody {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mainBody h1 {
+    text-align: center;
+    color: #900028;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #900028;
+}
+
+form input,
+form select {
+    font-family: "Roboto Flex", Arial, sans-serif;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #282220;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #900028;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #900028;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #70001e;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .mainBody {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    form {
+        gap: 10px;
+    }
+}
