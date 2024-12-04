@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Clear any existing content
             eventsContainer.innerHTML = "";
 
-            // Populate the events box
+            // Ecent Box
             events.forEach((event) => {
                 const eventElement = document.createElement("div");
                 eventElement.classList.add("event-item");

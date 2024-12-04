@@ -1,10 +1,6 @@
 <?php
-
-
-//require our files, remember should be relative to index.php
 require_once '../app/core/Router.php';
-//require_once '../app/controllers/MainController.php';
-// require '../app/models/Model.php';
+
 
 
 //set up env variables

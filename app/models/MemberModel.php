@@ -19,11 +19,8 @@ class MemberModel extends Model {
                 ':school' => $data['school'],
                 ':is_active' => true
             ]);
-            if ($result) {
-                error_log("Member added successfully: " . print_r($data, true));
-            } else {
-                error_log("Database Error: " . print_r($stmt->errorInfo(), true));
-            }
+            
+            
             return $result;
         } catch (PDOException $e) {
             error_log("PDOException: " . $e->getMessage());

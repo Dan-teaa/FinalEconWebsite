@@ -1,13 +1,11 @@
 <?php
 
 namespace app\models;
-
-require_once 'Model.php'; // Ensure the Model class is included
+require_once 'Model.php';
 
 class EventModel extends Model {
-    protected $table = 'events'; // Define the table name for the model
+    protected $table = 'events';
 
-    
     public function getUpcomingEvents() {
         error_log('(5) Entered EventModel::getUpcomingEvents()');
         $db = $this->connect();
@@ -33,9 +31,6 @@ class EventModel extends Model {
         $events = $stmt->fetchAll(\PDO::FETCH_ASSOC);
         error_log('Fetched upcoming events: ' . print_r($events, true));
         return $events;
-
-        
-        
     }
 }
 

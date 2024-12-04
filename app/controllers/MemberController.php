@@ -8,18 +8,14 @@ require_once '../app/models/MemberModel.php';
 
 class MemberController extends MainController {
     
-    /**
-     * Render the Join Page (GET Request)
-     */
+    //Call to render the join page
     public function renderJoinPage() {
         // Ensure the page is loaded relative to index.php
         include './assets/views/main/join.html';
         exit;
     }
 
-    /**
-     * Handle form submission for joining (POST Request)
-     */
+    // Handle form submission
     public function handleJoinSubmission() {
         error_log('handleJoinSubmission reached'); // Server log
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -32,7 +28,6 @@ class MemberController extends MainController {
                 'school' => trim($_POST['school'] ?? ''),
             ];
 
-            // Basic Validation
             if (empty($data['first_name']) || empty($data['last_name']) || empty($data['email'])) {
                 echo json_encode(['success' => false, 'message' => 'All fields are required']);
                 http_response_code(400);
@@ -41,9 +36,7 @@ class MemberController extends MainController {
 
             // Save the member
             $memberModel = new MemberModel();
-            
-
-            
+    
         }
 
         $mainController = new MainController();

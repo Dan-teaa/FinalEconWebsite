@@ -1,4 +1,4 @@
-/* Join Page Styling */
+
 body {
     font-family: "Roboto Flex", Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #282220;
 }
 
-/* Main Body Section */
+
 .mainBody {
     max-width: 800px;
     margin: 50px auto;
@@ -24,7 +24,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Form Styling */
+
 form {
     display: flex;
     flex-direction: column;
@@ -76,7 +76,7 @@ button[type="submit"]:hover {
     background-color: #70001e;
 }
 
-/* Responsive Design */
+/* Responsive Design for join.html*/
 @media screen and (max-width: 768px) {
     .mainBody {
         padding: 20px;

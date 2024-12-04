@@ -10,12 +10,7 @@ class EventController {
         $this->eventModel = new EventModel();
         error_log('(2) __Construct in Event Controller initialized');
     }
-
-   
-
-    /**
-     * Fetch upcoming events and return as JSON.
-     */
+    // Fetch all upcoming events
     public function getUpcomingEvents() {
         error_log('(4) INSIDE EVENTCONTROLLER: Function was called');
     
@@ -28,7 +23,5 @@ class EventController {
         header('Content-Type: application/json');
         echo json_encode($events);
         error_log('(8) Events from model: ' . print_r($events, true));
-
-
     }
 }

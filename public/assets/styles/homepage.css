@@ -329,9 +329,10 @@ body {
     background-color: #900028; 
     color: white;
     font-family: "Roboto Flex", Arial, sans-serif;
-    padding: 30px; 
+    padding: 30px;
+}
 
-/
+
 .footerContainer {
     display: flex;
     justify-content: space-between; 
